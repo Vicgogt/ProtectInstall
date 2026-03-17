@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Instalando VicgoScript..."
+echo -e "${azul}Instalando VicgoScript..."
 
 # Instalar dependencias básicas
 apt update -y
@@ -13,5 +13,5 @@ wget -q https://raw.githubusercontent.com/Vicgogt/ProtectInstall/main/menu -O /u
 chmod +x /usr/local/bin/vicgosh
 
 # Mensaje final
-echo "Instalación completada ✔️"
-echo "Usa el comando: vicgosh"
+echo -e "${verde}Instalación completada!!! By. @Vicgogt ✔️${reset}"
+echo -e "${rojo}Para Acceder Usa el comando: vicgosh${reset}"
