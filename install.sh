@@ -1,9 +1,13 @@
 #!/bin/bash
-# Instalador Netsys.sh – ejecutable con 'menu'
+# Instalador Netsys.sh – listo para ejecutar
 
 # URL de tu script
 URL="https://raw.githubusercontent.com/Vicgogt/ProtectInstall/refs/heads/main/Netsys.sh"
-DEST="/usr/local/bin/menu"
+DEST="/usr/local/bin/Netsys.sh"
+
+echo "[*] Instalando dependencias necesarias..."
+apt update -y
+apt install -y wget curl figlet python3 > /dev/null 2>&1
 
 echo "[*] Descargando Netsys.sh..."
 wget -q -O "$DEST" "$URL"
@@ -16,4 +20,4 @@ fi
 chmod +x "$DEST"
 
 echo "[OK] Instalación completada."
-echo "Ahora puedes ejecutar el script con: menu"
+echo "Ahora puedes ejecutar el script con: menu$DEST"
